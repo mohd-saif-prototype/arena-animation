@@ -1,0 +1,100 @@
+/* defining font, font-size, etc. for desktop */
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
+
+@import url("/assets/css/theme.css");
+/* @import url("/assets/css/dark-theme.css"); */
+
+@import url("/assets/css/utility.css");
+
+:root {
+  --font-scale: 1.333;
+  --p: 1rem;
+  --h5: calc(var(--p) * var(--font-scale));
+  --h4: calc(var(--h5) * var(--font-scale));
+  --h3: calc(var(--h4) * var(--font-scale));
+  --h2: calc(var(--h3) * var(--font-scale));
+  --h1: calc(var(--h2) * var(--font-scale));
+  --small: calc(var(--p) / var(--font-scale));
+
+  --margin-lg: 0 12%;
+  --margin-md: 0 6%;
+
+  --border1: 1rem;
+  --border05: 0.5rem;
+}
+
+/* --------------------------- Navbar Elements --------------------------- */
+
+.navbar,
+.navbar * {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid; */
+  column-gap: 1vw;
+  /* align-items: center; */
+}
+.navbar * {
+  align-items: center;
+}
+
+.navbar {
+  position: fixed;
+  padding: 0 6%;
+  background-color: var(--bg20);
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.navbar li {
+  margin-top: 0;
+}
+
+.navbar img {
+  margin: 1vw 0;
+}
+
+.nav-btn {
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 0.5em 2em;
+
+  white-space: nowrap;
+}
+
+/* --------------------------- Form Elements --------------------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+  /* max-width: 1500px; */
+  padding: 2vw;
+  border: 2px solid rebeccapurple;
+  border-radius: 10px;
+}
+
+form *  {
+  border-radius: 5px;
+  margin: 0.25vw 0;
+  padding: 0.25vw;
+  font-size: 1vw;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  min-width: 300px;
+}
+
+main > section:nth-child(2n + 1) {
+  background-color: var(--accent10);
+}
+
+/* ------------------------------------------------ */
+
+
+button {
+  cursor: pointer;
+}
