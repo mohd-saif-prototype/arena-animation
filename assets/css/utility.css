@@ -8,8 +8,6 @@
   box-sizing: border-box;
   scroll-padding-top: 3em;
   font-family: "Poppins", ui-sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 .option-settings *,
@@ -46,33 +44,6 @@ body {
   padding: 0;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100vh;
-  margin: var(--margin-md);
-  width: auto !important;
-  font-family: "Poppins", ui-sans-serif;
-  color: var(--text);
-  background-color: var(--bg);
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  position: relative;
-  line-height: 1.75;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8em;
-  margin: 5rem 0;
-  padding-right: 25vw;
-  width: 100%;
-}
 
 .small {
   font-size: var(--small) !important;
