@@ -15,22 +15,7 @@
   font-family: inherit !important;
 }
 
-/* latest */
-.latest {
-  padding: 0.1rem 0.5rem;
-  border: 1px solid var(--secondary30);
-  width: fit-content;
-  border-radius: var(--border05);
-  background: var(--secondary20);
-  transition: opacity ease 0.3s;
-  font-size: var(--small);
-  opacity: 100%;
-}
 
-.latest:hover {
-  opacity: 70%;
-  transition: opacity ease 0.3s;
-}
 
 /* global */
 html {
@@ -111,7 +96,7 @@ p {
 }
 
 ::selection {
-  background-color: var(--static9);
+  background-color: var(--accent10);
 }
 
 li {
