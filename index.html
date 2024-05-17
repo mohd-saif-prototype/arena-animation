@@ -1,84 +1,305 @@
 <!-- 
-todo: Creating the landing page template for Arena Animation that could work perfctly in any browser and any device
+Create the landing page template for Arena Animation that works perfctly and responsive in any browser and any device 
 
-the landing page will be created using bootstrap version 5.3.3
+Theme must be dark mode by default
+Use bootstrap version 5.3.3
 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arena Animations</title>
-    <!-- Downloaded and inserted the bootstrap.min.css file here to use in the landing page -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Downloaded and inserted the bootstrap.min.js file here to use in the landing page -->
+    <link rel="stylesheet" href="assets/css/style-utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Bootstrap.min.css version: 5.3.3 -->
+    <title>Abc | Arena Animation</title>
     <script src="assets/js/script.js" defer></script>
+    <!-- Bootstrap.min.js version: 5.3.3 -->
+    <!-- <style>
+      * {
+        /* border: 1px solid red; */
+        /* box-sizing: border-box; */
+      }
+    </style> -->
   </head>
-  <body>
-    <!-- class="navbar navbar-expand-lg bg-body-tertiary rounded position-fixed w-100 z-1 py-0" -->
+  <body class="bg-dark text-light" data-bs-theme="dark">
+    <!-- 1. Navigation bar -->
     <nav
-      class="navbar navbar-brand navbar-expand-lg bg-body-tertiary rounded position-fixed w-100 z-1 py-0"
+      id="navbar"
+      class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-body rounded fixed-top p-0"
+      data-bs-theme="dark"
     >
-      <div class="container-fluid px-5">
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/images/logo.png"
+            alt="Arena Animation logo"
+            class="img-fluid"
+            width="100%"
+            style="width: 10rem; min-width: 100px"
+          />
+        </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ms-auto bg-body-tertiary"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#arena-animation-navbar"
-          aria-controls="arena-animation-navbar"
+          data-bs-target="#navbarArenaAnimation"
+          aria-controls="navbarArenaAnimation"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div
-          class="collapse navbar-collapse d-lg-flex"
-          id="arena-animation-navbar"
+          class="collapse navbar-collapse d-lg-flex justify-content-lg-center"
+          id="navbarArenaAnimation"
         >
-          <a class="navbar-brand col-lg-3 me-0" href="#"
-            ><img
-              src="assets/images/logo.png"
-              alt="Arena Animation logo"
-              class="img-fluid"
-              style="width: 10rem; min-width: 100px"
-              width="100%"
-          /></a>
-          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+          <ul class="navbar-nav ms-auto text-light">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home"
-                >Home</a
-              >
+              <a class="nav-link" href="#Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#About"
-                >About</a
-              >
+              <a class="nav-link" href="#Highlights">Highlights</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Highlights"
-                >Highlights</a
-              >
+              <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Contact"
-                >Contact</a
-              >
+              <a class="nav-link" href="#Contact">Contact</a>
             </li>
           </ul>
-          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-            <a class="btn btn-primary" href="tel:+918826973280">Call us now</a>
-          </div>
+          <a class="btn btn-primary ms-3" href="tel:+919821493579">
+            <i class="bi bi-telephone-fill">+919821493579</i>
+          </a>
         </div>
       </div>
     </nav>
+
+    <!-- 2. Main content -->
     <div class="container">
-      <div class="row flex-row-reverse">
-        <div class="col-4">
-          <div class="d-flex align-items-center justify-content-center position-fixed bottom-0 sticky-top">
+      <div class="row">
+        <!-- 2.1. Main Sections -->
+        <div class="col-9">
+          <!-- 2.1.1. Home -->
+          <div id="Home" class="section-padding">
+            <h1 class="display-1">Arena Animation</h1>
+            <p class="lead" style="font-size: 1.25rem">
+              UG/ PG Degree Programs
+              <br />
+              Prosper in the Multimedia Industry
+              <br />
+              with Animation & Game Design Courses
+            </p>
+            <section>
+              <hr class="my-4">
+              <h2 class="fw-bold">Our Programs</h2>
+              <p class="lead">
+                Being the best animation institute in India, we welcome all
+                enthusiasts keen on exploring the fascinating world of graphics.
+                Our degree programs cater to diverse interests and aspirations.
+                With a robust curriculum that blends core creative and technical
+                training, our UG/PG programs equip students with the skills and
+                expertise essential for a seamless transition into the dynamic
+                animation and multimedia industry.
+              </p>
+              <details class="accordion-item">
+                <summary class="accordion-header">Bachelor's Degree</summary>
+                <div class="accordion-body">3 years</div>
+                <br>
+                <ul class="list-unstyled">
+                  <li>B.Voc in Animation and VFx</li>
+                  <li>B.Voc. in Game Design &amp; Development</li>
+                </ul>
+              </details>
+              <details class="accordion-item">
+                <summary class="accordion-header">Master's Degree</summary>
+                <div class="accordion-body">2 years</div>
+                <br>
+                <ul class="list-unstyled">
+                  <li>M.Voc in Animation and VFX</li>
+                  <li>M.Voc in Game Design and Development</li>
+                </ul>
+              </details>
+            </section>
+          </div>
+
+          <!-- 2.1.2. Highlights -->
+
+          <div id="Highlights" class="section-padding">
+            <h2>Highlights</h2>
+            <div>
+              <h3>Our courses</h3>
+              <!-- Create three cards horizontally that consists an image, heading and paragraph and a button to navigate to a different webpage -->
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        2D/3D Animation Course in Delhi
+                      </h5>
+                      <p class="card-text">
+                        The Advanced Diploma Course in 2D/3D Animation &amp; A/V
+                        Post Production is one of the most comprehensive of all
+                        animation courses in Delhi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Graphic and UI/UX</h5>
+                      <p class="card-text">
+                        The Advanced Diploma Course in Multimedia and Animation
+                        is one of the most comprehensive of all animation
+                        courses in Delhi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">VFx Courses</h5>
+                      <p class="card-text">
+                        VFx Diploma course offered by TGC is among the best
+                        courses offered in Composting and 3d special effect High
+                        end VFx.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2.1.3. About -->
+
+          <div id="About" class="section-padding">
+            <h2>About</h2>
+            <section>
+              <h3>The Best Animation Institute In Delhi</h3>
+              <p>
+                Arena Animation Kalkaji is a thriving hub for aspiring graphic
+                designers and animators. For over a quarter-century, we've been
+                dedicated to nurturing artistic talent and equipping students with
+                the skills to become successful creative professionals. Our legacy
+                is built on a foundation of industry-relevant curriculum,
+                passionate faculty, and a supportive learning environment. We
+                believe in fostering creativity, innovation, and a love for the
+                visual arts.
+              </p>
+              <p>
+                Our programs are designed to equip you with the technical
+                expertise and practical knowledge you need to thrive in the
+                ever-evolving world of graphic design and animation. We offer a
+                variety of diploma and certificate courses tailored to your
+                specific interests and career goals. Whether you're a budding
+                artist or looking to upskill for your dream job, Arena Animation
+                Kalkaji provides the perfect platform to launch your creative
+                journey. Join our vibrant community, explore your artistic
+                potential, and become the designer or animator you've always
+                envisioned yourself to be.
+              </p>
+            </section>
+          </div>
+
+          <!-- 2.1.4. Contact -->
+
+          <div id="Contact" class="section-padding">
+            <h2>Contact</h2>
+            <div class="card-group text-center">
+              <div class="card">
+                <h5 class="card-header">Delhi - Saket</h5>
+                <div class="card-body">
+                  <address class="card-text">
+                    <i class="bi bi-geo-alt"></i>
+                    <a href="#"
+                      >J.P. House, Lower Ground, Plot 172, Lane 2, Westend Marg,
+                      Saidulajab, Saket, New Delhi - 110030
+                    </a>
+                  </address>
+                  <div class="card-text">
+                    <i class="bi bi-telephone-outbound"></i>
+                    <a href="tel:01140666500">01140666500</a>
+                  </div>
+                  <div class="card-text">
+                    <i class="bi bi-telephone-outbound"></i>
+                    <a href="tel:+91 9821493579">+91 9821493579</a>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="mailto:MalviyaNagarArena@gmail.com"
+                  title="MalviyaNagarArena@gmail.com"
+                  class="btn btn-secondary"
+                    ><i class="bi bi-envelope"></i> Email Us</a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">Delhi - Kalkaji</h5>
+                <div class="card-body">
+                  <address class="card-text">
+                    <i class="bi bi-geo-alt"></i>
+                    <a href="#"
+                      >M-61, 2nd Floor, Above Axis Bank, Near Vijay Sales,
+                      Kalkaji, New Delhi - 110019
+                    </a>
+                  </address>
+                  <div class="card-text">
+                    <i class="bi bi-telephone-outbound"></i>
+                    <a href="tel:01140071266">01140071266</a>
+                  </div>
+                  <div class="card-text">
+                    <i class="bi bi-telephone-outbound"></i>
+                    <a href="tel:+919821493577">+919821493577</a>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="mailto:KalkajiArena@gmail.com"
+                  title="KalkajiArena@gmail.com"
+                  class="btn btn-secondary"
+                    ><i class="bi bi-envelope"></i> Email Us</a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">UP - Varanasi</h5>
+                <div class="card-body">
+                  <address class="card-text">
+                    <i class="bi bi-geo-alt"></i>
+                    <a href="#"
+                      >B 27/92, PLOT NO-10, 2nd Floor, Jawahar Nagar Colony,
+                      Bhelupur, Varanasi - 221010
+                    </a>
+                  </address>
+                  <div class="card-text">
+                    <i class="bi bi-telephone-outbound"></i>
+                    <a href="tel:+919999380187">+919999380187</a>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="mailto:ArenaVaranasiCampus@gmail.com"
+                    title="ArenaVaranasiCampus@gmail.com" class="btn btn-secondary"><i class="bi bi-envelope"></i> Email Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2.2. Form -->
+        <div class="col-3">
+          <div class="section-padding sticky-top z-0 text-center">
             <form
               action="#"
-              class="d-flex flex-column gap-2 text-center border rounded px-3 py-4 w-100"
+              class="form-control"
               data-bs-toggle="validator"
               role="form"
             >
@@ -142,222 +363,276 @@ the landing page will be created using bootstrap version 5.3.3
             </form>
           </div>
         </div>
-        <main class="col-8">
-          <section id="Home" class="pt-5">
-            <h1 class="display-1">Arena Animation</h1>
-            <p class="lead">
-              UG/ PG Degree Programs
-              <br />
-              Prosper in the Multimedia Industry
-              <br />
-              with Animation & Game Design Courses
-            </p>
-            <a class="btn btn-primary" href="#Enroll" role="button"
-              >Enroll for 2024 Batch</a
-            >
-
-            <section>
-              <hr class="my-4" />
-              <h2 class="fw-bold">Our Programs</h2>
-              <p class="lead">
-                Being the best animation institute in India, we welcome all
-                enthusiasts keen on exploring the fascinating world of graphics.
-                Our degree programs cater to diverse interests and aspirations.
-                With a robust curriculum that blends core creative and technical
-                training, our UG/PG programs equip students with the skills and
-                expertise essential for a seamless transition into the dynamic
-                animation and multimedia industry.
-              </p>
-              <details class="accordion-item">
-                <summary class="accordion-header">Bachelor's Degree</summary>
-                <div class="accordion-body">3 years</div>
-                <br />
-                <ul class="list-unstyled">
-                  <li>B.Voc in Animation and VFx</li>
-                  <li>B.Voc. in Game Design &amp; Development</li>
-                </ul>
-              </details>
-              <details class="accordion-item">
-                <summary class="accordion-header">Master's Degree</summary>
-                <div class="accordion-body">2 years</div>
-                <br />
-                <ul class="list-unstyled">
-                  <li>M.Voc in Animation and VFX</li>
-                  <li>M.Voc in Game Design and Development</li>
-                </ul>
-              </details>
-            </section>
-          </section>
-          <hr />
-          <section id="About" class="pt-5">
-            <h3>The Best Animation Institute In Delhi</h3>
-            <p>
-              Arena Animation Kalkaji is a thriving hub for aspiring graphic
-              designers and animators. For over a quarter-century, we've been
-              dedicated to nurturing artistic talent and equipping students with
-              the skills to become successful creative professionals. Our legacy
-              is built on a foundation of industry-relevant curriculum,
-              passionate faculty, and a supportive learning environment. We
-              believe in fostering creativity, innovation, and a love for the
-              visual arts.
-            </p>
-            <p>
-              Our programs are designed to equip you with the technical
-              expertise and practical knowledge you need to thrive in the
-              ever-evolving world of graphic design and animation. We offer a
-              variety of diploma and certificate courses tailored to your
-              specific interests and career goals. Whether you're a budding
-              artist or looking to upskill for your dream job, Arena Animation
-              Kalkaji provides the perfect platform to launch your creative
-              journey. Join our vibrant community, explore your artistic
-              potential, and become the designer or animator you've always
-              envisioned yourself to be.
-            </p>
-          </section>
-          <hr />
-          <section id="Highlights" class="pt-5">
-            <h2>Highlights</h2>
-            <!-- Our Courses -->
-            <div>
-              <h3>Our courses</h3>
-              <!-- Create three cards horizontally that consists an image, heading and paragraph and a button to navigate to a different webpage -->
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card">
-                    <img
-                      src="https://via.placeholder.com/300x200"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        2D/3D Animation Course in Delhi
-                      </h5>
-                      <p class="card-text">
-                        The Advanced Diploma Course in 2D/3D Animation & A/V
-                        Post Production is one of the most comprehensive of all
-                        animation courses in Delhi.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img
-                      src="https://via.placeholder.com/300x200"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Graphic and UI/UX</h5>
-                      <p class="card-text">
-                        The Advanced Diploma Course in Multimedia and Animation
-                        is one of the most comprehensive of all animation
-                        courses in Delhi.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img
-                      src="https://via.placeholder.com/300x200"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">VFx Courses</h5>
-                      <p class="card-text">
-                        VFx Diploma course offered by TGC is among the best
-                        courses offered in Composting and 3d special effect High
-                        end VFx.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Our Partners -->
-            <div>
-              <h3>Our partners</h3>
-              <img
-                src="assets/images/logo strip arena.png"
-                alt="our partners"
-                width="100%"
-                class="img-fluid"
-              />
-            </div>
-          </section>
-          <hr />
-          <section id="Contact" class="pt-5">
-            <h2>Contact</h2>
-            <!-- to add three cards for contact purposes -->
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Physical Address</h5>
-                    <address class="card-text">
-                      M-61, 2nd Floor, Above Axis Bank, Near Vijay Sales,
-                      Kalkaji, New Delhi - 110019
-                    </address>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Call or mail us</h5>
-                    <p class="card-text">
-                      <a href="tel:011-40071266">011-40071266</a>,
-                      <a href="tel:9821493577">9821493577</a>
-                    </p>
-                    <p class="card-text">
-                      <a href="mailto:KalkajiArena@gmail.com"
-                        >KalkajiArena@gmail.com</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Open hours</h5>
-                    <p class="card-text">Monday - Saturday: 9:00am - 7:00pm</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start mt-5">
-      <div class="container p-4">
-        <!-- Columns for form -->
+    <div class="position-fixed fs-1" style="bottom: 2.5vw; right: 3vw">
+      <a href="https://wa.me/919821493579"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <!-- 3. Footer -->
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
         <div class="row">
-          <div class="col-9 row row-cols-1 row-cols-md-3 g-4">
-            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
-              <img src="assets/images/Arena-Kalkaji-Logo-black-transparent.png""
-              alt="logo" class="img-fluid">
-              <p>Something related to about</p>
-            </div>
-            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
-              <h5 class="text-uppercase mb-4">Useful links</h5>
-              <p>Some text..</p>
-            </div>
-            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
-              <h5 class="text-uppercase mb-4">Company</h5>
-              <p>Some text..</p>
-            </div>
+          <div class="col-lg-3 mb-3">
+            <a
+              class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
+              href="/"
+              aria-label="Bootstrap"
+            >
+              <img
+                src="assets/images/logo.png"
+                alt="Arena Animation logo"
+                width="100%"
+                height="auto"
+              />
+            </a>
+            <ul class="list-unstyled small">
+              <li class="mb-2">Point number 1 about it.</li>
+              <li class="mb-2">Point number 2 about it. or some link</li>
+              <li class="mb-2">&copy; 2024 All Rights Reserved.</li>
+            </ul>
           </div>
-          <!-- A para for copyright -->
-          <p class="text-center">&copy; 2024 Copyright: Arena Animation</p>
+
+          <div class="col-lg-6 offset-lg-1 mb-3 row">
+            <table class="table-tertiary table-sm table-hover">
+              <thead>
+                <tr>
+                  <th>Links</th>
+                  <th>Follow Us</th>
+                  <th>Community</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.arenasouthdelhi.com/"
+                      target="_blank"
+                      rel="noopener"
+                      >Delhi Saket</a
+                    >
+                  </td>
+                  <td>
+                    <ul class="list-inline gap-2">
+                      <li class="list-inline-item">
+                        <a href="https://www.facebook.com/ArenaAnimationSaket"
+                          ><i class="bi bi-facebook"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.instagram.com/arenaanimationdelhi/"
+                          ><i class="bi bi-instagram"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.youtube.com/c/ArenaAnimationDelhi/"
+                          ><i class="bi bi-youtube"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="list-inline gap-2">
+                      <li class="list-inline-item">
+                        <a
+                          href="https://twitter.com/SaketArena"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="bi bi-twitter-x"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          href="https://medium.com/@arenaanimationsaket"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="bi bi-medium"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          href="https://www.linkedin.com/company/arena-animation-saket/"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="bi bi-linkedin"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.arenakalkaji.com/"
+                      target="_blank"
+                      rel="noopener"
+                      >Delhi Kalkaji</a
+                    >
+                  </td>
+                  <td>
+                    <ul class="list-inline gap-2">
+                      <li class="list-inline-item">
+                        <a href="https://www.facebook.com/ArenaAnimationKalkaji"
+                          ><i class="bi bi-facebook"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          href="https://www.instagram.com/arenaanimationkalkaji/"
+                          ><i class="bi bi-instagram"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          href="https://www.youtube.com/c/ArenaAnimationKalkaji/"
+                          ><i class="bi bi-youtube"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="list-inline gap-2">
+                      <li class="list-inline-item">
+                        <a
+                          href="https://twitter.com/KalkajiArena"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="bi bi-twitter-x"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          href="https://medium.com/@arenaanimationkalkaji"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="bi bi-medium"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          href="https://www.linkedin.com/company/arena-animation-kalkaji/"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="bi bi-linkedin"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://arenaanimationvaranasi.in/"
+                      target="_blank"
+                      rel="noopener"
+                      >Delhi Varanasi</a
+                    >
+                  </td>
+                  <td>
+                    <ul class="list-inline gap-2">
+                      <li class="list-inline-item">
+                        <a href="https://www.facebook.com/ArenaVaranasi/"
+                          ><i class="bi bi-facebook"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="https://www.instagram.com/arenavaranasi/"
+                          ><i class="bi bi-instagram"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          href="https://www.youtube.com/channel/UCqWowiiRT57lRQOgdzh_rng"
+                          ><i class="bi bi-youtube"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="list-inline gap-2">
+                      <li class="list-inline-item">
+                        <a
+                          href="https://twitter.com/ArenaVaranasi"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="bi bi-twitter-x"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          href="https://medium.com/@arenaanimationvaranasi"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="bi bi-medium"></i
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          href="https://www.linkedin.com/company/arena-animation-varanasi/"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="bi bi-linkedin"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div
+            class="col-6 col-lg-2 mb-3 d-none d-lg-block d-xl-block d-xxl-block"
+          >
+            <h5>Other</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/icons"
+                  target="_blank"
+                  rel="noopener"
+                  >Terms policy</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/rfs"
+                  target="_blank"
+                  rel="noopener"
+                  >About</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/examples/"
+                  target="_blank"
+                  rel="noopener"
+                  >Others</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
+
+    <script>
+      $(document).ready(function () {
+        // Smooth scroll to section when clicking on a navbar link
+        $("a.nav-link").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            const hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800
+            ); // Adjust animation speed as needed
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,364 @@
+<!-- 
+todo: Creating the landing page template for Arena Animation that could work perfctly in any browser and any device
+
+the landing page will be created using bootstrap version 5.3.3
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arena Animations</title>
+    <!-- Downloaded and inserted the bootstrap.min.css file here to use in the landing page -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Downloaded and inserted the bootstrap.min.js file here to use in the landing page -->
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <!-- Making website in dark mode by default -->
+  <body class="bg-dark text-light">
+    <!-- class="navbar navbar-expand-lg bg-body-tertiary rounded position-fixed w-100 z-1 py-0" -->
+    <nav
+      class="navbar navbar-brand navbar-expand-lg  rounded position-fixed w-100 z-1 py-0 navbar-dark bg-dark "
+    >
+      <div class="container-fluid px-5">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"!
+          data-bs-target="#arena-animation-navbar"
+          aria-controls="arena-animation-navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse d-lg-flex"
+          id="arena-animation-navbar"
+        >
+          <a class="navbar-brand col-lg-3 me-0" href="#"
+            ><img
+              src="assets/images/logo.png"
+              alt="Arena Animation logo"
+              class="img-fluid"
+              style="width: 10rem; min-width: 100px"
+              width="100%"
+          /></a>
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#About"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Highlights"
+                >Highlights</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <a class="btn btn-primary" href="tel:+918826973280">Call us now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row flex-row-reverse">
+        <div class="col-4">
+          <div class="d-flex align-items-center justify-content-center position-fixed bottom-0 sticky-top">
+            <form
+              action="#"
+              class="d-flex flex-column gap-2 text-center border rounded px-3 py-4 w-100"
+              data-bs-toggle="validator"
+              role="form"
+            >
+              <h3>Enquire Now</h3>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="number"
+                  name="Age"
+                  placeholder="Age"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  name="Phone"
+                  placeholder="Phone Number"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <select
+                  name="interested"
+                  id="interested"
+                  class="form-select"
+                  required
+                >
+                  <option value="what are you interested in?" disabled selected>
+                    what are you interested in?
+                  </option>
+                  <option value="Degree">Degree</option>
+                  <option value="VFX">VFx</option>
+                  <option value="Animation">Animation</option>
+                  <option value="Other courses">Other courses</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="Address"
+                  id="address"
+                  placeholder="address"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <main class="col-8">
+          <section id="Home" class="pt-5">
+            <h1 class="display-1">Arena Animation</h1>
+            <p class="lead">
+              UG/ PG Degree Programs
+              <br />
+              Prosper in the Multimedia Industry
+              <br />
+              with Animation & Game Design Courses
+            </p>
+            <a class="btn btn-primary" href="#Enroll" role="button"
+              >Enroll for 2024 Batch</a
+            >
+
+            <section>
+              <hr class="my-4" />
+              <h2 class="fw-bold">Our Programs</h2>
+              <p class="lead">
+                Being the best animation institute in India, we welcome all
+                enthusiasts keen on exploring the fascinating world of graphics.
+                Our degree programs cater to diverse interests and aspirations.
+                With a robust curriculum that blends core creative and technical
+                training, our UG/PG programs equip students with the skills and
+                expertise essential for a seamless transition into the dynamic
+                animation and multimedia industry.
+              </p>
+              <details class="accordion-item">
+                <summary class="accordion-header">Bachelor's Degree</summary>
+                <div class="accordion-body">3 years</div>
+                <br />
+                <ul class="list-unstyled">
+                  <li>B.Voc in Animation and VFx</li>
+                  <li>B.Voc. in Game Design &amp; Development</li>
+                </ul>
+              </details>
+              <details class="accordion-item">
+                <summary class="accordion-header">Master's Degree</summary>
+                <div class="accordion-body">2 years</div>
+                <br />
+                <ul class="list-unstyled">
+                  <li>M.Voc in Animation and VFX</li>
+                  <li>M.Voc in Game Design and Development</li>
+                </ul>
+              </details>
+            </section>
+          </section>
+          <hr />
+          <section id="About" class="pt-5">
+            <h3>The Best Animation Institute In Delhi</h3>
+            <p>
+              Arena Animation Kalkaji is a thriving hub for aspiring graphic
+              designers and animators. For over a quarter-century, we've been
+              dedicated to nurturing artistic talent and equipping students with
+              the skills to become successful creative professionals. Our legacy
+              is built on a foundation of industry-relevant curriculum,
+              passionate faculty, and a supportive learning environment. We
+              believe in fostering creativity, innovation, and a love for the
+              visual arts.
+            </p>
+            <p>
+              Our programs are designed to equip you with the technical
+              expertise and practical knowledge you need to thrive in the
+              ever-evolving world of graphic design and animation. We offer a
+              variety of diploma and certificate courses tailored to your
+              specific interests and career goals. Whether you're a budding
+              artist or looking to upskill for your dream job, Arena Animation
+              Kalkaji provides the perfect platform to launch your creative
+              journey. Join our vibrant community, explore your artistic
+              potential, and become the designer or animator you've always
+              envisioned yourself to be.
+            </p>
+          </section>
+          <hr />
+          <section id="Highlights" class="pt-5">
+            <h2>Highlights</h2>
+            <!-- Our Courses -->
+            <div>
+              <h3>Our courses</h3>
+              <!-- Create three cards horizontally that consists an image, heading and paragraph and a button to navigate to a different webpage -->
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="https://via.placeholder.com/300x200"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        2D/3D Animation Course in Delhi
+                      </h5>
+                      <p class="card-text">
+                        The Advanced Diploma Course in 2D/3D Animation & A/V
+                        Post Production is one of the most comprehensive of all
+                        animation courses in Delhi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="https://via.placeholder.com/300x200"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Graphic and UI/UX</h5>
+                      <p class="card-text">
+                        The Advanced Diploma Course in Multimedia and Animation
+                        is one of the most comprehensive of all animation
+                        courses in Delhi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="https://via.placeholder.com/300x200"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">VFx Courses</h5>
+                      <p class="card-text">
+                        VFx Diploma course offered by TGC is among the best
+                        courses offered in Composting and 3d special effect High
+                        end VFx.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Our Partners -->
+            <div>
+              <h3>Our partners</h3>
+              <img
+                src="assets/images/logo strip arena.png"
+                alt="our partners"
+                width="100%"
+                class="img-fluid"
+              />
+            </div>
+          </section>
+          <hr />
+          <section id="Contact" class="pt-5">
+            <h2>Contact</h2>
+            <!-- to add three cards for contact purposes -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Physical Address</h5>
+                    <address class="card-text">
+                      M-61, 2nd Floor, Above Axis Bank, Near Vijay Sales,
+                      Kalkaji, New Delhi - 110019
+                    </address>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Call or mail us</h5>
+                    <p class="card-text">
+                      <a href="tel:011-40071266">011-40071266</a>,
+                      <a href="tel:9821493577">9821493577</a>
+                    </p>
+                    <p class="card-text">
+                      <a href="mailto:KalkajiArena@gmail.com"
+                        >KalkajiArena@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Open hours</h5>
+                    <p class="card-text">Monday - Saturday: 9:00am - 7:00pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5 p-5 bg-body-tertiary rounded text-muted">
+      <div class="container p-4">
+        <!-- Columns for form -->
+        <div class="row">
+          <div class="col-9 row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+              <img src="assets/images/Arena-Kalkaji-Logo-black-transparent.png""
+              alt="logo" class="img-fluid">
+              <p>Something related to about</p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+              <h5 class="text-uppercase mb-4">Useful links</h5>
+              <p>Some text..</p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+              <h5 class="text-uppercase mb-4">Company</h5>
+              <p>Some text..</p>
+            </div>
+          </div>
+          <!-- A para for copyright -->
+          <p class="text-center">&copy; 2024 Copyright: Arena Animation</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
